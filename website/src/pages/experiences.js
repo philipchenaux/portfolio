@@ -1,15 +1,19 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+
+import '../App.css'
+
+import TransitionGrid from'../components/transitions';
 
 class Experiences extends React.Component {
 
     render() {
         return (
-            <Container>
-                <h1 className="main_font">
-                    EXPERIENCES
-                </h1>
-            </Container>
+            <Col className="bg2">
+                <div className="experience">
+                    <TransitionGrid/>
+                </div>
+            </Col>      
         )
     }
 }

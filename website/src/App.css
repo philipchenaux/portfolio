@@ -1,15 +1,268 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.sidebar {
+  will-change: transform;
+}
+
+/*landing*/
+
 .main_font {
 
   font-family: Futura;
   font-style: normal;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 70px;
 
 }
 
-.nav_font {
+.landing_font {
+  position: absolute;
+  font-family: Futura;
+  top: 0;
+  left: -5%;
+  font-style: normal;
+  font-weight: 60;
+  font-size: 12px;
+  color: white;
+  z-index: 2;
+}
 
+.grad_color {
+
+  background: linear-gradient(to left, #8348FF, #00FFA3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.row_width {
+  width: 61%;
+}
+
+.subtitle_font {
+
+  font-family: Futura;
+  font-style: italic;
+  font-size: 55px;
+
+}
+
+.landing_page {
+  height: 100vh;
+  width: 100%;
+
+  background-color: black;
+}
+
+.card1
+{
+  position: absolute;
+  border-radius: 5px;
+  background-size: 1360px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card2
+{
+  position: absolute;
+  border-radius: 5px;
+  background-size: 1360px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card3{
+  position: absolute;
+  border-radius: 5px;
+  background-size: 800px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card4 {
+  position: absolute;
+  border-radius: 5px;
+  background-size: 800px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card1 {
+  width: 90vw;
+  height: 100vh;
+  background-image: url('./images/rectangle_back.png');
+}
+
+.card2 {
+  width: 90vw;
+  height: 100vh;
+  background-image: url('./images/rectangle_front.png');
+}
+
+.card3 {
+  opacity: 0.9;
+  width: 90vw;
+  height: 90vh;
+  background-image: url('./images/green_back.png');
+}
+
+.card4 {
+  opacity: 0.9;
+  width: 90vw;
+  height: 90vh;
+  background-image: url('./images/purple_front.png');
+}
+
+.layer1{
+  z-index:1;
+}
+
+.downArrow {
+  width: 20px;
+  position: absolute;
+  margin-top: -5vh;
+  left: 50%;
+  margin-left: -15px;
+  transition: opacity 0.5s;
+}
+
+.downArrow:hover {
+  opacity: 0.7;
+}
+
+/*About Me*/
+.aboutme_page {
+  position: relative;
+  height: 101vh;
+  width: 100%;
+  border-top: 2px solid white;
+}
+
+.about_page1{
+  overflow-y: hidden;
+  position: relative;
+}
+
+.about_page2{
+  height: 101vh;
+  overflow-y: scroll;
+  border-bottom: 2px solid white;
+}
+
+.about_font {
+  position: absolute;
+  font-family: Gill Sans;
+  bottom: 50%;
+  left: 33%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  color: white;
+  z-index: 2;
+}
+
+.about_font2 {
+  position: absolute;
+  font-family: Gill Sans;
+  bottom: 40%;
+  left: 30%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  color: white;
+  z-index: 2;
+}
+
+
+.bg1 {
+  background: linear-gradient(141.84deg, #00FFA3 0%, #4F0EFA 98.23%);
+  text-align: center;
+}
+
+.bg2 {
+  background: #4F4E4E;
+}
+
+.section {
+  border-left: 2px solid white;
+}
+
+
+.about_header{
   font-family: Gill Sans;
   font-style: normal;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: right;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.about_subtitle{
+  font-family: Gill Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align:left;
+  color: white;
+  margin-bottom: 0;
+}
+
+.about_text {
+  font-family: Gill Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: left;
+  color: white;
+}
+
+.cv, .strava, .linkedin, .tri, .github{
+  padding: 5px;
+}
+
+.about_arrowd {
+  position: absolute;
+  bottom: 5px;
+  left: 52%;
+}
+
+.about_arrowu {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+}
+
+/*Projects*/
+.projects_page {
+  height: 100vh;
+  width: 100%;
+  border-top: 2px solid white;
+}
+
+
+/*Experiences*/
+.experiences_page {
+  height: 100vh;
+  width: 100%;
+  border-top: 2px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10px;
 }
